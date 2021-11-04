@@ -6,7 +6,7 @@ body{
     transform: translate(-50%,-50%);
 }
 
-.waiting span {
+.waiting div {
     width: 25px;
     height: 25px;
     margin: 0 5px;
@@ -19,12 +19,12 @@ body{
     animation-timing-function: ease-in-out;
 }
 
-.waiting span:nth-child(2){
+.waiting div:nth-child(2){
     background-color: orange;
     animation-delay: 0.4s;
 }
 
-.waiting span:nth-child(3){
+.waiting div:nth-child(3){
     background-color: blue;
     animation-delay: 0.8s;
 }
