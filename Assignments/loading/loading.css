@@ -1,0 +1,40 @@
+body{
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    background-color: darkslateblue;
+}
+.bar{
+    position: relative;
+    height: 10px;
+    width: 1110%;
+    border: 10px solid black;
+    border-radius: 15px;
+}
+.bar .color{
+    position: absolute;
+    background-color: orange;
+    width: 0px;
+    height: 10px;
+    border-radius: 10px;
+    animation: progres 4s linear;  
+    animation-fill-mode: forwards;  
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 70%;
+    }
+    75%{
+        width: 90%;
+    }
+    100%{
+        width: 100%;
+    }
+};
