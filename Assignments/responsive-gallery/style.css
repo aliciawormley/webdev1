@@ -1,0 +1,93 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .3em;
+
+  }
+  
+  .gallery img {
+    width: 126%;
+  }
+  
+  @media (max-width: 650px) {
+    
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  header {
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 1000;
+      float: left;
+      line-height: 3;
+      font-size: 25px;
+      letter-spacing: .07em;
+     
+  }
+
+  nav{
+    text-align: right;
+    
+  }
+
+  nav a {
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+    line-height: 9em;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    letter-spacing: .2em;
+    text-decoration: none;
+}
+
+body{
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.image-card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  display: block;
+  color: black;
+}
+
+.image-card:hover .image-title {
+  opacity: 1;
+}
+
+.image-title {
+  position: absolute;
+  background: #fffd;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  width: 500px;
+  
+  display: grid;
+  place-items: center;
+  transition: all .25s;
+}
+
+img {
+  display: block;
+  height: 200px;
+  
+}
