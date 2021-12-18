@@ -1,0 +1,105 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .3em;
+ }
+  
+  .gallery img {
+    width: 126%;
+  }
+
+  .image-card {
+    position: relative;
+    height: 400px;
+    display: block;
+    color: black;
+  }
+  
+  .image-card:hover .image-title {
+    opacity: 1;
+  }
+  
+  .image-title {
+    position: absolute;
+    background: #fffd;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    width: 475px;
+    
+    display: grid;
+    place-items: center;
+    transition: all .25s;
+  }
+  img {
+    display: block;
+    height: 400px;
+     }
+
+     @media (max-width: 760px) {
+      .gallery {
+        grid-template-columns: 1fr ;
+      }
+    }
+    @media(max-width: 760px){
+      .mainmenu{
+        display: none;
+      }
+    }
+    
+    @media(min-width: 761px){
+      .hamIcon{
+        display: none;
+      }
+      .mainmenu{
+        display: initial;
+      }
+    }
+
+body {
+    text-align: center;
+    background: #3f000f;
+}
+
+header {
+    background: burlywood;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px; 
+}
+
+h2 {
+    font-family: 'Ephesis', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+nav a {
+    padding: 1rem;
+    line-height: 2em;
+    font-weight: 700;
+}
+
+
+
+img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+
+}
+
+
